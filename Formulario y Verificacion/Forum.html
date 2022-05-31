@@ -1,0 +1,100 @@
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario del Hotel</title>
+
+  
+  <link rel="stylesheet" type="text/css" href="css/forum.css">
+
+    
+  </head>
+
+
+<body>  
+  <php>
+
+    </php>
+  <div class="contact_form">
+
+    
+      <h1>Formulario del Hotel</h1>
+        <h3>Escríbe los siguientes datos para guardar la solicitud</h3>
+
+
+          <form action="formulario.php" class="formulario" id="formulario"method="post">       
+
+            <!--Grupo Nombre-->
+                <div class="formulario__grupo" id="grupo__nombre">    
+                <p>
+                  <label for="nombre" class="formulario__label">Nombre
+                    <span class="obligatorio">*</span> </label>
+                    <div class="formulario__grupo-input">
+                    <input type="text" class= "formulario__input" name="nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
+                  </p>
+                </div>
+
+                <!--Grupo Email-->
+                <div class="formulario__grupo" id="grupo__correo">
+                  <label for="correo" class="formulario__label">Correo Electrónico</label>
+                  <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="ejemplo@correo.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
+                </div>
+
+                  <!--Grupo Telefono-->
+                  <div class="formulario__grupo" id="grupo__telefono">    
+                    <p>
+                      <label for="telefono" class="formulario__label">Telefono
+                        <span class="obligatorio">*</span> </label>
+                        <div class="formulario__grupo-input">
+                        <input type="text" class= "formulario__input" name="telefono" id="telefono" required="obligatorio" placeholder="Escribe tu telefono">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                      </div>
+                      </p>
+                    </div>
+
+                    <!--Grupo Cantidad-->
+                    <div class="formulario__grupo" id="grupo__cantidad">    
+                      <p>
+                        <label for="cantidad" class="formulario__label">Cantidad de personas
+                          <span class="obligatorio">*</span> </label>
+                          <div class="formulario__grupo-input">
+                          <input type="text" class= "formulario__input" name="cantidad" id="cantidad" required="obligatorio" placeholder="Escribe la cantidad de personas">
+                          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        </p>
+                      </div>
+
+                      <!--Grupo Horario-->
+                      <div class="formulario__grupo" id="grupo__horario">    
+                        <p>
+                          <label for="horario" class="formulario__label">Horario
+                            <div class="formulario__grupo-input">
+                            <input type="text" class= "formulario__input" name="horario" id="horario" required="obligatorio" placeholder="El horario va aqui">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                          </div>
+                          </p>
+                        </div>
+                  
+                
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+              </div>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
+  <script src="js/forum.js"></script>
+  <script src="baseDatos.php"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
